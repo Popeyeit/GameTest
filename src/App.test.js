@@ -3,6 +3,5 @@ import { render } from "@testing-library/react"
 import App from "./components/App/App"
 
 it("renders without crashing", () => {
-  const { getByText } = render(<App />)
-  expect(getByText("Render without mistake")).toBeInTheDocument()
+  render(<App />)
 })
