@@ -1,12 +1,26 @@
-import React from "react"
+import React, { lazy, Suspense } from "react"
+import { Route, Switch } from "react-router-dom"
 import "./App.css"
-import NewTest from "../NewTest/NewTest"
 
+const StartPage = lazy(() => import("../../pages/StartPage/StartPage"))
+const GamePage = lazy(() => import("../../pages/GamePage/GamePage"))
+const GameOverPage = lazy(() => import("../../pages/GaveOverPage/GaveOverPage"))
 function App() {
   return (
     <div className="App">
-      <h1>Render without mistake</h1>
-      <NewTest />
+      <Suspense fallback={null}>
+        <Switch>
+          <Route path="/">
+            <StartPage />
+          </Route>
+          <Route path="/game">
+            <GamePage />
+          </Route>
+          <Route path="Game-over">
+            <GameOverPage />
+          </Route>
+        </Switch>
+      </Suspense>
     </div>
   )
 }
