@@ -5,10 +5,14 @@ const StartPage = () => {
   return (
     <section className={style.welcome}>
       <div className={style.welcome__wrapper}>
-        <h1 className={style.welcome__title}>Who wants to be a millionaire?</h1>
-        <button type="button" className={style.welcome__btn}>
-          Start
-        </button>
+        <div className={style["welcome__title-wrapper"]}>
+          <h1 className={style.welcome__title}>
+            Who wants to be a millionaire?
+          </h1>
+          <button type="button" className={style.welcome__btn}>
+            Start
+          </button>
+        </div>
       </div>
     </section>
   )
