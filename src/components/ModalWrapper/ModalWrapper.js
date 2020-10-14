@@ -1,7 +1,7 @@
-import React from 'react'
-import Modal from 'react-modal'
-import PropTypes from 'prop-types'
-import style from './ModalWrapper.module.css'
+import React from "react"
+import Modal from "react-modal"
+import PropTypes from "prop-types"
+import style from "./ModalWrapper.module.css"
 
 const ModalWrapper = ({ children, modalIsOpen, modalToggler }) => {
   return (
@@ -15,7 +15,7 @@ const ModalWrapper = ({ children, modalIsOpen, modalToggler }) => {
       <button
         type="button"
         onClick={modalToggler}
-        className={style['btn__close-modal']}
+        className={style["btn__close-modal"]}
       />
       {children}
     </Modal>
@@ -24,6 +24,6 @@ const ModalWrapper = ({ children, modalIsOpen, modalToggler }) => {
 ModalWrapper.propTypes = {
   modalIsOpen: PropTypes.bool.isRequired,
   modalToggler: PropTypes.func.isRequired,
-  children: PropTypes.symbol.isRequired,
+  children: PropTypes.element.isRequired,
 }
 export default ModalWrapper
