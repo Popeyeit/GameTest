@@ -1,0 +1,30 @@
+.modal {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  right: 10vw;
+  bottom: 10vh;
+  background-color: papayawhip;
+  z-index: 99;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.btn__close-modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  border: none;
+  background-color: transparent;
+  background-image: url('../../assets/close-btn.svg');
+}

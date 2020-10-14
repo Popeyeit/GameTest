@@ -15,9 +15,16 @@
   justify-content: center;
   margin: 0 auto;
 }
-.help {
+.help-btn {
   position: absolute;
   border: 1px solid rgb(255, 139, 55);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.help {
+  composes: help-btn;
   top: 60px;
   left: 20px;
   background: linear-gradient(
@@ -25,14 +32,24 @@
     rgb(255, 255, 255) 50%,
     rgb(255, 243, 235) 50%
   );
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
   transition: all 250ms linear;
 }
 .help:hover {
+  box-shadow: 0 0 6px 1px rgba(255, 139, 55, 0.5);
+  transform: scale(1.1);
+}
+.hall-help {
+  composes: help-btn;
+  background: linear-gradient(
+    to top,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 243, 235) 50%
+  );
+  top: 60px;
+  left: 120px;
+  transition: all 250ms linear;
+}
+.hall-help:hover {
   box-shadow: 0 0 6px 1px rgba(255, 139, 55, 0.5);
   transform: scale(1.1);
 }

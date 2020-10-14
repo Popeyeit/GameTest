@@ -8,6 +8,7 @@
     transform: translateX(0);
   }
 }
+
 .menu-template {
   width: 100vw;
   min-height: 100vh;
@@ -19,17 +20,16 @@
   justify-content: center;
   padding-bottom: 32px;
 }
-.menu {
-  composes: menu-template;
 
-  left: 100%;
-  display: none;
-}
 .menu--open {
   composes: menu-template;
   top: 0;
-
   animation: animate 300ms linear;
+}
+.menu {
+  composes: menu-template;
+  left: 100%;
+  display: none;
 }
 .menu__close-btn {
   border: none;

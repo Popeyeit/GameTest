@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import QuestionItem from '../../components/QuestionItem/QuestionItem'
 import Menu from '../../components/Menu/Menu'
+import ModalWrapper from '../../components/ModalWrapper/ModalWrapper'
 import {
   resetCurrentIdx,
   resetScore,
   fiftyHelp,
   resetFiftyHelp,
 } from '../../redux/actions'
+import ModalContent from '../../components/ModalContent/ModalContent'
 import style from './GamePage.module.css'
 
 const GamePage = () => {
@@ -16,6 +18,12 @@ const GamePage = () => {
   const { currentIdx } = useSelector(state => state.questions)
   const { fiftyHelper } = useSelector(state => state.questions)
   const [isOpenMenu, setIsOpenMenu] = useState(false)
+  const [modalIsOpen, setIsOpen] = useState(false)
+  const [showBtn, setShowBtn] = useState(0)
+  const modalToggler = () => {
+    setIsOpen(state => !state)
+    setShowBtn(state => state + 1)
+  }
 
   useEffect(() => {
     dispatch(resetScore())
@@ -63,6 +71,18 @@ const GamePage = () => {
               50/50
             </button>
           )}
+          {showBtn < 2 && (
+            <button
+              onClick={modalToggler}
+              type="button"
+              className={style['hall-help']}
+            >
+              Hall help
+            </button>
+          )}
+          <ModalWrapper modalToggler={modalToggler} modalIsOpen={modalIsOpen}>
+            <ModalContent />
+          </ModalWrapper>
           <button
             type="button"
             onClick={toggleOpenMenu}
