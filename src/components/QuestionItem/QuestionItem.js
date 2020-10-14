@@ -16,9 +16,19 @@ const QuestionItem = ({ letter, answer }) => {
   const { fiftyHelper } = useSelector(state => state.questions)
   const dispatch = useDispatch()
   const history = useHistory()
+  const correctBtn = document.querySelector(`.${style.selected__correct}`)
+  const selectedBtn = document.querySelector(`.${style.selected__option}`)
+
+  if (correctBtn) {
+    correctBtn.classList.remove(style.selected__correct)
+  }
+  if (selectedBtn) {
+    selectedBtn.classList.remove(style.selected__option)
+  }
 
   const handleAnswer = ({ target }) => {
     const [isCorrect] = Object.values(answer)
+    target.classList.toggle(style.selected__option)
     if (isCorrect) {
       setTimeout(() => {
         target.classList.toggle(style.selected__correct)
@@ -31,8 +41,8 @@ const QuestionItem = ({ letter, answer }) => {
             history.replace('game/total')
           }
           dispatch(currentIdxAction())
-        }, 1000)
-      }, 1000)
+        }, 2500)
+      }, 1500)
       return
     }
     setTimeout(() => {
@@ -41,7 +51,7 @@ const QuestionItem = ({ letter, answer }) => {
         dispatch(resetCurrentIdx())
         history.replace('/game/total')
       }, 1000)
-    }, 1000)
+    }, 1500)
   }
 
   return (

@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import QuestionItem from '../../components/QuestionItem/QuestionItem'
 import Menu from '../../components/Menu/Menu'
-import { resetCurrentIdx, resetScore, fiftyHelp } from '../../redux/actions'
+import {
+  resetCurrentIdx,
+  resetScore,
+  fiftyHelp,
+  resetFiftyHelp,
+} from '../../redux/actions'
 import style from './GamePage.module.css'
 
 const GamePage = () => {
@@ -15,6 +20,7 @@ const GamePage = () => {
   useEffect(() => {
     dispatch(resetScore())
     dispatch(resetCurrentIdx())
+    dispatch(resetFiftyHelp())
   }, [dispatch])
   const toggleOpenMenu = () => {
     setIsOpenMenu(state => !state)

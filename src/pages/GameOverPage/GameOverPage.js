@@ -1,7 +1,5 @@
 import React from 'react'
-
 import Greet from '../../components/Greet/Greet'
-
 import style from './GameOverPage.module.css'
 
 const GameOverPage = () => {

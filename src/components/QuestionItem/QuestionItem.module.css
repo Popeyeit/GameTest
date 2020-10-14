@@ -114,15 +114,23 @@
     width: 29.85555vw;
   }
 }
+
+.selected__option {
+  background-image: url('../../assets/hover.svg');
+}
+.selected__option::before {
+  background-color: #ff8b37;
+}
+
 .selected__wrong {
-  background-image: url('../../assets/WrongMob.svg');
+  background-image: url('../../assets/WrongMob.svg') !important;
 }
 .selected__wrong::before {
-  background-color: #ec6259;
+  background-color: #ec6259 !important;
 }
 .selected__correct {
-  background-image: url('../../assets/correctAnswer.svg');
+  background-image: url('../../assets/correctAnswer.svg') !important;
 }
 .selected__correct::before {
-  background-color: #47d867;
+  background-color: #47d867 !important;
 }

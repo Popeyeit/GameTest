@@ -1,6 +1,6 @@
 [
   {
-    "question": "What is your name",
+    "question": "What does redux use to update the state?",
     "prise": 500,
     "id": 1,
     "answers": [
@@ -8,34 +8,34 @@
         "letter": "a",
         "id": 5,
         "answer": {
-          "Dan": false
+          "Force of nature": false
         }
       },
       {
         "letter": "b",
         "id": 2123,
         "answer": {
-          "Igor": true
+          "Reducer": true
         }
       },
       {
         "letter": "c",
         "id": 22,
         "answer": {
-          "Alexander": false
+          "Google": false
         }
       },
       {
         "letter": "d",
         "id": 2,
         "answer": {
-          "Qwerty": false
+          "UseState": false
         }
       }
     ]
   },
   {
-    "question": "How old are you?",
+    "question": "Which of these is a pseudo-class?",
     "prise": 1000,
     "id": 2,
     "answers": [
@@ -43,34 +43,34 @@
         "letter": "a",
         "id": 2,
         "answer": {
-          "10": false
+          "Absolute": false
         }
       },
       {
         "letter": "b",
         "id": 3,
         "answer": {
-          "20": false
+          "Before": false
         }
       },
       {
         "letter": "c",
         "id": 4,
         "answer": {
-          "30": true
+          "Hover": true
         }
       },
       {
         "letter": "d",
         "id": 5,
         "answer": {
-          "40": false
+          "Pseudo-class": false
         }
       }
     ]
   },
   {
-    "question": "What is your perfect place in the world?",
+    "question": "Which of these is a component lifecycle method?",
     "prise": 2000,
     "id": 3,
     "answers": [
@@ -78,34 +78,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "ComponentDidMount": true
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "ComponentMount": false
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "IsComponent": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "WillMountDidUpdate": false
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "Which of this is a variable in javascript?",
     "prise": 4000,
     "id": 4,
     "answers": [
@@ -113,34 +113,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "$": false
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "if": false
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "echo": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "const": true
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "What a selector has higher specificity than others?",
     "prise": 8000,
     "id": 5,
 
@@ -149,34 +149,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "Id": true
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "Class": false
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "Attribute": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "Pseudo-class": false
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "Which of the options is a position property?",
     "prise": 16000,
     "id": 6,
     "answers": [
@@ -184,34 +184,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "Block": false
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "Inline": false
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "Sticky": true
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "Background": false
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "Which of the options is a flexbox property?",
     "prise": 32000,
     "id": 7,
     "answers": [
@@ -219,34 +219,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "Justify-answer": false
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "Align-staff": false
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "Transform": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "Justify-content": true
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "Which of the options is a justify-content value?",
     "prise": 64000,
     "id": 8,
     "answers": [
@@ -254,34 +254,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "Scale": false
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "Center": true
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "Translate": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "Margin": false
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "Which of this is a hook?",
     "prise": 125000,
     "id": 9,
     "answers": [
@@ -289,34 +289,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "UseState": true
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "UseSomething": false
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "UseBus": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "UseMoney": false
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "What is an object in javascript?",
     "prise": 250000,
     "id": 10,
     "answers": [
@@ -324,34 +324,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "Function": true
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "Let": false
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "For": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "Object": true
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "What method of the array does not return an array?",
     "prise": 500000,
     "id": 11,
     "answers": [
@@ -359,34 +359,34 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "Filter": false
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "ForEach": true
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "Map": false
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "Slice": false
         }
       }
     ]
   },
   {
-    "question": "What is your name",
+    "question": "Please, rate the work done",
     "prise": 1000000,
     "id": 12,
     "answers": [
@@ -394,28 +394,28 @@
         "id": 12,
         "letter": "a",
         "answer": {
-          "USA": true
+          "1-3": true
         }
       },
       {
         "id": 11,
         "letter": "b",
         "answer": {
-          "Ukraine": false
+          "4-6": true
         }
       },
       {
         "id": 10,
         "letter": "c",
         "answer": {
-          "DNR": false
+          "7-8": true
         }
       },
       {
         "id": 9,
         "letter": "d",
         "answer": {
-          "LNR": false
+          "9-10": true
         }
       }
     ]

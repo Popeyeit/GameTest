@@ -1,4 +1,4 @@
-@import "./fonts.css";
+@import './fonts.css';
 
 html {
   box-sizing: border-box;
@@ -34,7 +34,9 @@ p {
 a {
   text-decoration: none;
 }
-
+button {
+  outline: none;
+}
 ul,
 li {
   margin: 0;

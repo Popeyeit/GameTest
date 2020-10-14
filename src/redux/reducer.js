@@ -6,6 +6,7 @@ import {
   changeScore,
   resetScore,
   fiftyHelp,
+  resetFiftyHelp,
 } from './actions'
 import questionsItems from '../questions.json'
 
@@ -22,6 +23,7 @@ const score = createReducer(0, {
 })
 const fiftyHelper = createReducer(0, {
   [fiftyHelp]: state => state + 1,
+  [resetFiftyHelp]: () => 0,
 })
 export default combineReducers({
   currentIdx,
