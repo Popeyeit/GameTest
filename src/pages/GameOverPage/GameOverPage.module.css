@@ -1,0 +1,7 @@
+.total {
+  background-color: rgb(245, 245, 247);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
